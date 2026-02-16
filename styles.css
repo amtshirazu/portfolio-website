@@ -536,6 +536,10 @@ nav .fa-solid {
         transition: right 0.5s;
     }
 
+    nav {
+        margin-top: 10px;
+    }
+
     nav ul li {
         display: block;
         margin: 15px 20px;
