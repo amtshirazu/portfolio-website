@@ -141,7 +141,8 @@ nav ul li a:hover::after {
     line-height: 1.8;
     font-size: 17px;
     margin-bottom: 20px;
-    max-width: 650px;
+    max-width: 520px;
+    text-align: justify;
 }
 
 .about-3 {
@@ -311,24 +312,43 @@ nav ul li a:hover::after {
 .layer {
     position: absolute;
     width: 100%;
-    height: 0%;
+    height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.6), #d80548);
     border-radius: 10px;
     left: 0;
     bottom: 0;
     overflow: hidden;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     flex-direction: column;
-    transition: height 0.5s;
-    padding: 0px 20px;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center; 
+    padding: 50px 20px 80px; 
+}
+
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .layer p {
     text-align: justify;
     line-height: 1.5;
+}
+
+.layer a {
+    position: absolute;
+    bottom: 10%;
+    margin-top: 20px;
+    text-decoration: none;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    color: #d80548;
+    background: #fff;
+    font-size: 18px;
+    border-radius: 50%;
 }
 
 
@@ -345,28 +365,6 @@ nav ul li a:hover::after {
     transform: scale(1.1);
 }
 
-.work-item:hover .layer {
-    height: 100%;
-}
-
-
-.layer h3 {
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-
-.layer a {
-    margin-top: 20px;
-    text-decoration: none;
-    line-height: 60px;
-    width: 60px;
-    height: 60px;
-    color: #d80548;
-    background: #fff;
-    font-size: 18px;
-    border-radius: 50%;
-}
 
 .see_more {
     display: block;
