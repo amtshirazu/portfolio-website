@@ -249,7 +249,7 @@ nav ul li a:hover::after {
 
 /* -----------------services----------- */
 
-#services {
+/* #services {
     padding: 20px 0px;
 }
 
@@ -295,6 +295,7 @@ nav ul li a:hover::after {
     background: #d80548;
     transform: translateY(-10px);
 }
+*/
 
 
 /* -----------------------my-work--------------------- */
