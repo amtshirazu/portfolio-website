@@ -44,7 +44,7 @@
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <!--<li><a href="#services">Services</a></li> -->
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -66,31 +66,51 @@
     <div id="about">
         <div class="container">
             <h1 class="sub-title">About Me</h1>
-            <div class="row">
-                <!-- <div class="about-1">
-                    <img src="images/cover_1.jpg" alt="about-img">
-                </div> -->
 
-                <div class="about-2">
-                    <p>
-                        I am a Software Engineering student at Konya Technical University
-                        with a strong focus on secure web and mobile application development.
-                    </p>
+            <div class="about-2">
+                <p>
+                    I am a <span class="highlight">Software Engineering student</span> at
+                    <span class="highlight">Konya Technical University</span> with a strong focus on building
+                    <span class="highlight">scalable, secure, and high-performance applications</span>
+                    across web and mobile platforms.
+                </p>
 
-                    <p>
-                        I specialize in designing and developing scalable, high-performance web
-                        applications,building cross-platform mobile applications, and integrating
-                        security best practices throughout the software development lifecycle.
-                    </p>
+                <p>
+                    I specialize in developing <span class="highlight">cross-platform mobile applications</span>
+                    using <span class="highlight">Flutter</span>, as well as designing
+                    <span class="highlight">robust backend systems</span> with
+                    <span class="highlight">REST APIs and microservices architecture</span>.
+                    I enjoy transforming ideas into real-world products, with a strong emphasis on
+                    <span class="highlight">clean architecture</span>, maintainability, and performance.
+                </p>
 
-                    <p>
-                        Beyond development, I actively study application security and penetration
-                        testing, applying OWASP principles and real-world attack methodologies to
-                        build resilient and secure systems.
-                    </p>
+                <p>
+                    Currently, I am building a <span class="highlight">full-featured Quran Streaming & Reading
+                        application</span>
+                    that includes <span class="highlight">offline access</span>,
+                    <span class="highlight">audio streaming with background playback</span>, and a
+                    <span class="highlight">smart caching system</span> — reflecting my ability to design
+                    and implement <span class="highlight">production-level features</span> beyond academic work.
+                </p>
 
-                </div>
+                <p>
+                    Beyond development, I actively study <span class="highlight">application security and penetration
+                        testing</span>,
+                    applying <span class="highlight">OWASP principles</span> and real-world attack methodologies
+                    to build <span class="highlight">resilient and secure systems</span>. I believe that
+                    security is not an afterthought, but a <span class="highlight">fundamental part</span>
+                    of modern software engineering.
+                </p>
+
+                <p>
+                    I am passionate about <span class="highlight">continuous learning</span>,
+                    <span class="highlight">problem-solving</span>, and writing
+                    <span class="highlight">clean, efficient code</span>. My long-term goal is to build
+                    <span class="highlight">impactful and scalable software solutions</span>, particularly
+                    contributing to technological growth and innovation in my home country.
+                </p>
             </div>
+
 
             <div class="about-3">
 
@@ -133,10 +153,13 @@
                 <div class="about-contents" id="experience">
                     <ul>
                         <li>
-                            <span>Full-Stack Food Delivery Platform</span>
+                            <span>Quran Streaming & Reading Mobile Application</span>
                             <p>
-                                Designing and developing a complete food ordering system using React, Node.js, MongoDB,
-                                and Stripe integration.
+                                Designing and developing a full-featured Quran application using Flutter, featuring
+                                offline reading,
+                                audio streaming with background playback, and a smart caching system. Built with clean
+                                architecture
+                                and Riverpod for scalable and maintainable state management.
                             </p>
                         </li>
 
@@ -144,7 +167,8 @@
                             <span>Phone Validation Microservice System</span>
                             <p>
                                 Built a Dockerized microservice-based application for validating and registering phone
-                                numbers with REST APIs and MySQL.
+                                numbers using
+                                REST APIs and MySQL, with a focus on scalability and service isolation.
                             </p>
                         </li>
 
@@ -152,8 +176,8 @@
                             <span>Global Time & Weather Mobile App</span>
                             <p>
                                 Developed a Flutter mobile application that fetches real-time world time and weather
-                                data
-                                using external APIs.
+                                data using external
+                                APIs, with dynamic UI updates and asynchronous data handling.
                             </p>
                         </li>
                     </ul>
@@ -242,20 +266,23 @@
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
+
                 <div class="work-item">
-                    <img src="images/web.jpg">
+                    <img src="images/quran-app.jpg">
+
                     <div class="layer">
-                        <h3>Phone Verification System</h3>
+                        <h3>Quran Streaming & Reading App</h3>
+
                         <p>
-                            A web-based Phone Number Validation and Registration System that
-                            verifies 6-digit numbers against mathematical rules and registers
-                            valid numbers. Users can submit numbers, track registrations,and
-                            view statistics through a responsive interface. Built with a microservice
-                            architecture using Node.js, MySQL, and Docker for scalable and maintainable deployment.
+                            A full-featured Quran mobile application built with Flutter, designed to provide a smooth
+                            reading and listening experience. Includes offline Quran access, audio streaming with
+                            background playback, and a smart caching system for offline listening. Built using clean
+                            architecture and Riverpod for scalable state management.
                         </p>
 
-                        <a href="https://github.com/amtshirazu/phone-validation" target="_blank"
-                            rel="noopener noreferrer"> <i class="fa-solid fa-arrow-up-right-from-square"> </i></a>
+                        <a href="https://github.com/amtshirazu/quran_app" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
                 </div>
 
@@ -274,22 +301,21 @@
                     </div>
                 </div>
 
+
                 <div class="work-item">
-                    <img src="images/quran-app.jpg">
-
+                    <img src="images/web.jpg">
                     <div class="layer">
-                        <h3>Quran Streaming & Reading App</h3>
-
+                        <h3>Phone Verification System</h3>
                         <p>
-                            A full-featured Quran mobile application built with Flutter, designed to provide a smooth
-                            reading and listening experience. Includes offline Quran access, audio streaming with
-                            background playback, and a smart caching system for offline listening. Built using clean
-                            architecture and Riverpod for scalable state management.
+                            A web-based Phone Number Validation and Registration System that
+                            verifies 6-digit numbers against mathematical rules and registers
+                            valid numbers. Users can submit numbers, track registrations,and
+                            view statistics through a responsive interface. Built with a microservice
+                            architecture using Node.js, MySQL, and Docker for scalable and maintainable deployment.
                         </p>
 
-                        <a href="https://github.com/amtshirazu/quran-app" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
+                        <a href="https://github.com/amtshirazu/phone-validation" target="_blank"
+                            rel="noopener noreferrer"> <i class="fa-solid fa-arrow-up-right-from-square"> </i></a>
                     </div>
                 </div>
 
@@ -328,7 +354,7 @@
                             rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
 
-                    <a href="images/my-cv.pdf" download="Abdul-Muhsin-CV.pdf" class="btn1">Download CV</a>
+                    <a href="CV.pdf" download="Abdul-Muhsin-CV.pdf" class="btn1">Download CV</a>
                 </div>
 
                 <div class="right">

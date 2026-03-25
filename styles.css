@@ -5,21 +5,29 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #6366F1;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background: #080808;
+    background: #0F172A;
     color: #fff;
 }
 
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.jpg);
+    background-image: 
+        linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.3)),
+        url('images/background.jpg');
     background-size: cover;
     background-position: center;
+
 }
 
 .container {
@@ -44,7 +52,7 @@ nav {
 }
 
 .logo .logo_M {
-    color: #d80548;
+    color: var(--primary-color);
 }
 
 #sidemenu {
@@ -70,7 +78,7 @@ nav ul li a::after {
     height: 3px;
     position: absolute;
     left: 0;
-    background: #d80548;
+    background: var(--primary-color);
     bottom: -6px;
     transition: 0.5s;
 }
@@ -102,7 +110,7 @@ nav ul li a:hover::after {
 
 
 .header-text h1 span {
-    color: #ff004f;
+    color: var(--primary-color);
 }
 
 
@@ -124,40 +132,37 @@ nav ul li a:hover::after {
 .sub-title {
     font-size: 50px;
     font-weight: 600;
-    color: #d80548;
+    color: var(--primary-color);
     text-align: center;
     margin-bottom: 30px;
 }
 
-.about-1 {
-    flex-basis: 35%;
-}
-
-.about-1 img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-}
 
 .about-2 {
-    flex-basis: 60%;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
 }
 
 .about-2 p {
     line-height: 1.8;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
-    max-width: 520px;
     text-align: justify;
+}
+
+.highlight {
+    color: #6366F1;
+    font-weight: 600;
 }
 
 .about-3 {
     max-width: 830px;
     margin: 100px auto 0 auto;
     padding: 30px;
-    background: #111;
+    background: #121d36;
     border-radius: 12px;
-    border: 1px solid #222;
+    border: 2px solid #222;
 }
 
 .about-titles {
@@ -179,7 +184,7 @@ nav ul li a:hover::after {
     width: 0;
     bottom: -8px;
     height: 3px;
-    background: #d80548;
+    background: var(--primary-color);
     position: absolute;
     transition: 0.5s;
 }
@@ -202,7 +207,7 @@ nav ul li a:hover::after {
 }
 
 .about-contents ul li span {
-    color: #b54769;
+    color: var(--primary-color);
     font-size: 14px;
 }
 
@@ -302,7 +307,6 @@ nav ul li a:hover::after {
 
 #portfolio {
     padding: 20px 0px;
-    margin-top: 80px;
 }
 
 .work-list {
@@ -338,7 +342,7 @@ nav ul li a:hover::after {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #d80548);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), var(--primary-color));
     border-radius: 10px;
     left: 0;
     bottom: 0;
@@ -371,7 +375,7 @@ nav ul li a:hover::after {
     line-height: 60px;
     width: 60px;
     height: 60px;
-    color: #d80548;
+    color: var(--primary-color);
     background: #fff;
     font-size: 18px;
     border-radius: 50%;
@@ -385,7 +389,7 @@ nav ul li a:hover::after {
     width: fit-content;
     margin: 50px auto;
     padding: 14px 50px;
-    border: 1px solid #d80548;
+    border: 1px solid var(--primary-color);
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
@@ -394,7 +398,7 @@ nav ul li a:hover::after {
 }
 
 .see_more:hover {
-    background: #d80548;
+    background: var(--primary-color);
 }
 
 
@@ -418,7 +422,7 @@ nav ul li a:hover::after {
 
 .left p i {
     font-size: 25px;
-    color: #d80548;
+    color: var(--primary-color);
     margin-right: 15px;
 }
 
@@ -436,7 +440,7 @@ nav ul li a:hover::after {
 }
 
 .social_icon a:hover {
-    color: #d80548;
+    color: var(--primary-color);
     transform: translateY(-5px);
 }
 
@@ -448,7 +452,7 @@ nav ul li a:hover::after {
 .contact-links:hover {
     text-decoration: underline;
     opacity: 0.8;
-    color: #d80548;
+    color: var(--primary-color);
 }
 
 
@@ -457,7 +461,7 @@ nav ul li a:hover::after {
     text-decoration: none;
     display: block;
     width: 50%;
-    background: #d80548;
+    background: var(--primary-color);
     padding: 12px 30px;
     border-radius: 6px;
     color: #fff;
@@ -485,7 +489,7 @@ form textarea {
     display: block;
     text-decoration: none;
     width: 35%;
-    background: #d80548;
+    background: var(--primary-color);
     padding: 12px 30px;
     border-radius: 6px;
     color: #fff;
@@ -496,22 +500,41 @@ form textarea {
 
 }
 
-#footer {
-    width: 100%;
-    padding: 40px 5px;
-    margin-top: 50px;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 300;
-    background: #262626;
-}
-
-#footer i {
-    color: #d80548;
-}
-
 nav .fa-solid {
     display: none;
+}
+
+
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #242323;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.3);
+}
+
+#footer {
+    padding: 40px 0;
+    background: #0F172A;
+    color: #ababab;
+    text-align: center;
+    font-size: 14px;
+    border-top: 2px solid #222;
+    margin-top: 50px;
 }
 
 
@@ -623,7 +646,7 @@ nav .fa-solid {
 
     .left p i {
         font-size: 25px;
-        color: #d80548;
+        color: var(--primary-color);
         margin-right: 8px;
     }
 
@@ -813,7 +836,7 @@ nav .fa-solid {
         right: -200px;
         top: 0;
         height: 100vh;
-        background: #d80548;
+        background: var(--primary-color);
         width: 200px;
         padding-top: 50px;
         z-index: 2;
@@ -966,7 +989,7 @@ nav .fa-solid {
         right: -200px;
         top: 0;
         height: 100vh;
-        background: #d80548;
+        background: var(--primary-color);
         width: 200px;
         padding-top: 50px;
         z-index: 2;
@@ -1077,7 +1100,6 @@ nav .fa-solid {
     }
 
 
-
     .btn2,
     .btn1 {
         width: 50%;
@@ -1087,7 +1109,7 @@ nav .fa-solid {
         margin: 20px auto 50px auto;
     }
 
-    #footer {
-        font-size: 14px;
+    #footer p {
+        margin: 0;
     }
 }
